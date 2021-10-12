@@ -11,3 +11,139 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+.main-body {
+  background-color: #dce2e4;
+  background-image: linear-gradient(180deg, #dce2e4 25%, #5e5c5c 100%);
+  min-width: 320px;
+}
+
+.main {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav section "
+    "footer footer";
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.head {
+  background: #393e41;
+}
+.navigation {
+  grid-area: nav;
+  width: 200px;
+  &-link {
+    display: flex;
+    justify-content: center;
+    background-color: #e7bb41;
+    color: #393e41;
+    margin: 2px 2px;
+  }
+}
+.header {
+  grid-area: header;
+}
+.main__header {
+  color: #e7bb41;
+  text-align: center;
+  background-color: #393e41;
+  &::before {
+    content: "";
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background: #e7bb41;
+    margin-right: 12px;
+  }
+  &::after {
+    content: "";
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    background: #e7bb41;
+    margin-left: 12px;
+  }
+}
+.main__heading {
+  color: #e7bb41;
+  text-align: center;
+}
+.rounded-image {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.main-section {
+  grid-area: section;
+  background-color: #d3d0cb;
+}
+p {
+  color: #393e41;
+}
+.footer {
+  grid-area: footer;
+  background-color: #393e41;
+  &-p {
+    color: #e7bb00;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0%;
+  }
+  .main-body {
+    background-color: #393e41;
+    background-image: none;
+  }
+  .main {
+    display: block;
+    max-width: 100%;
+  }
+  .navigation {
+    background-color: #393e41;
+    padding: 16px;
+    width: auto;
+    display: none;
+    &--open {
+      display: block;
+    }
+    &-link {
+      display: block;
+      background-color: #e7bb41;
+      color: #393e41;
+      margin: 0 0 16px;
+    }
+  }
+  .head {
+    background: #dce2e4;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .header {
+    margin-top: 60px;
+  } 
+  .hamburger {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-body {
+    background-color: #393e41;
+    background-image: none;
+  }
+}
