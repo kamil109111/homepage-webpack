@@ -2,13 +2,13 @@
 
 # WTF Webpack Starter Kit 
 
-Simple toolkit for your static websites development.
+Moja strona domowa - na podstawie szkolenia WTF - Co ten frontend?
 
-## How to use it?
+## Jak to odpalić?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Pobierz repozytorium na komputer, w konsoli przejdź do lokalizacji projektu i wpisz komendę `npm install`.
 
-## Available scripts
+## Możliwe skrypty
 
 `npm run start` - runs development mode
 
