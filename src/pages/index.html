@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Moja strona domowa</title>
+    <!-- Title -->
+    <meta property="homepage:title" content="Moja strona domowa" />
+    <!-- Optional description. 2-4 sentences. -->
+    <meta
+      property="homepage:description"
+      content="Moja strona domowa, stworzona na podstawie szkolenia WTF: Co ten frontend?"
+    />
+    <!-- full url with http(s) -->
+    <meta
+      property="homepage:url"
+      content="https://kamil109111.github.io/homepage-webpack/"
+    />
+    <!-- full url to the image with http(s) -->
+    <meta
+      property="homepage:image"
+      content="https://kamil109111.github.io/homepage-webpack/homepage.png"
+    />
   </head>
 
-  <body class="main-body">    
+  <body class="main-body">
     <main class="main">
       <header class="head">
-        <button class="hamburger hamburger--js" aria-label="Otwórz menu">Menu</button>
+        <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+          Menu
+        </button>
         <nav class="navigation navigation--js">
           <a class="navigation-link" href="index.html">Strona główna</a>
           <a class="navigation-link" href="page1.html">Strona 1</a>
           <a class="navigation-link" href="page2.html">Strona 2</a>
         </nav>
-        
       </header>
       <header class="header">
         <h1 class="main__header">Strona główna</h1>
@@ -25,7 +42,11 @@
       </header>
       <section class="main-section">
         <section class="regular-section">
-          <img class="rounded-image" src="../assets/img/photo.jpg" alt="Moja morda" />
+          <img
+            class="rounded-image"
+            src="../assets/img/photo.jpg"
+            alt="Moja morda"
+          />
           <h2 class="main__header">Frontend</h2>
           <article>
             <h3 class="header-style">Co to jest frontend?</h3>
@@ -57,12 +78,18 @@
             </p>
           </article>
         </section>
+        <section class="regular-section">
+          <h2 class="main__header">Moje repozytoria na Github</h2>
+          <article>
+            <h3 class="header-style">Lista repozytoriów:</h3>
+            <ul class="list--js"></ul>
+          </article>
+        </section>
       </section>
 
       <footer class="footer">
         <p class="footer-p">A tutaj jest stopka</p>
       </footer>
     </main>
-    <script src="main.js"></script>
   </body>
 </html>
